@@ -10,4 +10,6 @@
 
 
 int main( void );
+void spi_Config_EEPROM25LC1024( spiMap_t spi );
+float write_data_EEPROM25LC1024 (void);
 #endif /* PRACTICAS_PROGRAMACION_PRACTICAS_PROTOCOL_COM_PDC_TPF_1_INC_EEPROM_SPI_PDC_H_ */
