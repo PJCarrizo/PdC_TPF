@@ -1,4 +1,4 @@
-Practicas_programacion/Practicas_Protocol_Com/PdC_TPF_1/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o: \
+Practicas_programacion/Practicas_Protocol_Com/PdC_TPF/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o: \
  libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.c \
  libs/lpc_open/lpc_chip_43xx/inc/chip.h \
  libs/lpc_open/lpc_chip_43xx/inc/sys_config.h \
