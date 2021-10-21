@@ -15,34 +15,9 @@
 #include "EEPROM_25LC1024.h"
 #include "EEPROM_Port.h"
 /*==================[definiciones y macros]==================================*/
-//#define PCA9633_ADD              0x3E
-//#define PCA9633_REG_CONFIG_A     0x00
+
 /*==================[definiciones de datos internos]=========================*/
-/*
-char* itoa(int value, char* result, int base) {
-   // check that the base if valid
-   if (base < 2 || base > 36) { *result = '\0'; return result; }
 
-   char* ptr = result, *ptr1 = result, tmp_char;
-   int tmp_value;
-
-   do {
-      tmp_value = value;
-      value /= base;
-      *ptr++ = "zyxwvutsrqponmlkjihgfedcba9876543210123456789abcdefghijklmnopqrstuvwxyz" [35 + (tmp_value - value * base)];
-   } while ( value );
-
-   // Apply negative sign
-   if (tmp_value < 0) *ptr++ = '-';
-   *ptr-- = '\0';
-   while(ptr1 < ptr) {
-      tmp_char = *ptr;
-      *ptr--= *ptr1;
-      *ptr1++ = tmp_char;
-   }
-   return result;
-}
-*/
 /*==================[definiciones de datos externos]=========================*/
 
 /*==================[declaraciones de funciones internas]====================*/
@@ -66,16 +41,13 @@ int main( void )
 	uint32_t dato_vector [1024];
 
 	// ---------- CONFIGURACIONES ------------------------------
-	//uint8_t transmitDataBuffr[1];
-	// Inicializar y configurar la plataforma
-	//uint32_t state = 0;
-	//uint32_t input1 = 0;
+
 	boardConfig();
 
 	// SPI configuration
-	//spiConfig( SPI0 );
+	// spiConfig( SPI0 );
 	ini_spi_uart ();
-	gpioWrite( LEDR, ON );	// Indicador de puerta cerrada
+	gpioWrite( LEDR, ON );	// Indicador de puerta abierta
 
 	funcion_menu(input1);
 	/*
@@ -83,14 +55,9 @@ int main( void )
 	 */
 
 
+	while (TRUE){
 
-	//write_data_EEPROM25LC1024 (state);
-	//gpioWrite( LEDB, ON );
-	delay( 2 );
-		while (TRUE){
-
-
-		}
+	}
 
 
 }
